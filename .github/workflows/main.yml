@@ -1,9 +1,10 @@
+name: SPM TEST
 on:
   push:
-    branches: ['main']
-
+    branches: [ "main" ]
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.MY_TOKEN }}
+        GH_TOKEN: ${{ secrets.MY_TOKEN }}
