@@ -1,1 +1,9 @@
-GH_TOKEN: ${{secrets.MY_TOKEN}}
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.MY_TOKEN }}
