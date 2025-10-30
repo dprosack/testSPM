@@ -1,10 +1,12 @@
 name: SPM TEST
 on:
   push:
-    branches: [ "main" ]
- 
+    branches: ["main"]
 jobs:
   build:
-    runs-on: ubuntu-latest
-    env:
-        GH_TOKEN: ${{ secrets.MY_TOKEN }}
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Test Deploy"
+        env:
+          GH_TOKEN: ${{MY_TOKEN}}
+          PUBLISH_DIR: "./main"
