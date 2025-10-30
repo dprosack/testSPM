@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: "Test Deploy"
         env:
-          GH_TOKEN: ${{MY_TOKEN}}
+          GH_TOKEN: ${{secrets.MY_TOKEN}}
           PUBLISH_DIR: "./main"
